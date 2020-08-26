@@ -4,6 +4,11 @@
     <b-container class="bv-example-row">
       <b-row>
         <b-col sm="6" offset="3">
+          <ResultInfo />
+        </b-col>
+      </b-row>
+      <b-row>
+        <b-col sm="6" offset="3">
           <QuestionBox
             v-if="questions.length"
             :currentQuestion="questions[index]"
@@ -20,12 +25,14 @@
 
 <script>
 import Header from "./components/Header.vue";
+import ResultInfo from "./components/ResultInfo/ResultInfoContainer.vue";
 import QuestionBox from "./components/QuestionBox/QuestionBox.vue";
 
 export default {
   name: "App",
   components: {
     Header,
+    ResultInfo,
     QuestionBox,
   },
   data() {

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="question-box">
     <b-jumbotron>
       <template v-slot:lead>{{ currentQuestion.question }}</template>
 
@@ -92,3 +92,9 @@ export default {
   },
 };
 </script>
+
+<style>
+.question-box {
+  margin-top: 40px;
+}
+</style>
